@@ -1,8 +1,10 @@
 # DC Maps
 
-## Maps of Washington DC area public data 
+## Maps of Washington DC area public geodata 
 
-Source: http://data.dc.gov/Main_DataCatalog.aspx
+## Source
+
+http://data.dc.gov/Main_DataCatalog.aspx
 
 ## Process
 
