@@ -1,9 +1,0 @@
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
-"features": [
-{ "type": "Feature", "properties": { "OBJECTID": 43, "ADDRESS_ID": 287893, "FISCAL_YEAR": 2013, "APPLICANT": "Rita Jackson", "INDIVIDUAL": null, "ORGANIZATION": null, "ADDRESS": "3431 BENNING ROAD NE", "ADDRESS2": null, "CITY": "WASHINGTON", "STATE": "DC", "ZIP_4": "20019", "GRANT_CATEGORY": "East of the River (Individual)", "DISCIPLINE": null, "GRANT_": 16250, "URL": null, "WARD": 7, "X_COORD": 403771.79, "Y_COORD": 136461.81 }, "geometry": { "type": "Point", "coordinates": [ -76.956522779899998, 38.896004565699997 ] } },
-{ "type": "Feature", "properties": { "OBJECTID": 203, "ADDRESS_ID": 243267, "FISCAL_YEAR": 2013, "APPLICANT": "Jonathan Gann", "INDIVIDUAL": null, "ORGANIZATION": null, "ADDRESS": "916 G STREET NW", "ADDRESS2": "#203", "CITY": "WASHINGTON", "STATE": "DC", "ZIP_4": "20001", "GRANT_CATEGORY": "East of the River (Individual)", "DISCIPLINE": null, "GRANT_": 5000, "URL": null, "WARD": 2, "X_COORD": 397839.17, "Y_COORD": 136696.53 }, "geometry": { "type": "Point", "coordinates": [ -77.024912104500004, 38.898124442399997 ] } }
-]
-}

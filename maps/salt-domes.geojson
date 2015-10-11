@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "LOCATION": "3815 FORT RENO DR NW", "X": 393271.565079709980637, "Y": 142885.040514029999031, "LAT": -77.07762529, "LON": -77.07762529 }, "geometry": { "type": "Point", "coordinates": [ -77.077627605720267, 38.953849391020114 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "LOCATION": "401 FARRAGUT ST NE", "X": 400097.71702203998575, "Y": 142603.376065769989509, "LAT": -76.99887269, "LON": -76.99887269 }, "geometry": { "type": "Point", "coordinates": [ -76.998874974723975, 38.951337848664792 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "LOCATION": "1241 W ST NE", "X": 402753.851680509978905, "Y": 139176.176254590012832, "LAT": -76.96824396, "LON": -76.96824396 }, "geometry": { "type": "Point", "coordinates": [ -76.968246236098821, 38.92046029464737 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "LOCATION": "POTOMAC AVE SE & R ST SE", "X": 399373.101629370008595, "Y": 133668.664249480003491, "LAT": -77.00722405, "LON": -77.00722405 }, "geometry": { "type": "Point", "coordinates": [ -77.007226336645857, 38.870850695282826 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "LOCATION": "KEY BRIDGE", "X": 394065.806808450026438, "Y": 137369.165084909996949, "LAT": -77.06841452, "LON": -77.06841452 }, "geometry": { "type": "Point", "coordinates": [ -77.068416823282931, 38.904166402981424 ] } }
+]
+}

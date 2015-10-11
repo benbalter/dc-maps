@@ -62,18 +62,20 @@ class DCDataScraper
   end
 
   def directory
-    File.expand_path "..", File.dirname(__FILE__)
+    File.expand_path "../maps", File.dirname(__FILE__)
   end
 
   def cleanup
     logger.info "Cleaning up the repo..."
-    `rm -Rf #{directory}/*.geojson`
+    `rm -Rf #{directory}`
+    `mkdir #{directory}`
   end
 
   def scrape
     cleanup
     Parallel.each(datasets, :progress => "Scraping...") do |dataset|
-      `curl --silent --compressed #{dataset[:url]} -o #{dataset[:filename]}`
+      destination = File.expand_path dataset[:filename], directory
+      `curl --silent --compressed #{dataset[:url]} -o #{destination}`
     end
     enforce_size_limit
     write_index
@@ -94,13 +96,13 @@ class DCDataScraper
 
   def index
     @index ||= "## Datasets\n\n" + datasets.map do |dataset|
-      "* [#{dataset[:name]}](#{dataset[:filename]})"
+      "* [#{dataset[:name]}](maps/#{dataset[:filename]})"
     end.join("\n")
   end
 
   def write_index
     logger.info "Updating README.md"
-    readme_path = File.expand_path "README.md", directory
+    readme_path = File.expand_path "../README.md", directory
     readme = File.open(readme_path).read
     readme = readme.gsub(/## Datasets([^"##"]+\n)/, index)
     File.write readme_path, readme
