@@ -72,6 +72,7 @@ class DCDataScraper
   end
 
   def scrape
+    logger.info "Starting..."
     cleanup
     Parallel.each(datasets, :progress => "Scraping...") do |dataset|
       destination = File.expand_path dataset[:filename], directory
@@ -79,6 +80,7 @@ class DCDataScraper
     end
     enforce_size_limit
     write_index
+    logger.info "Done."
   end
 
   def datasets
@@ -90,7 +92,7 @@ class DCDataScraper
       end
       datasets = datasets.uniq
       logger.info "Found #{datasets.count} unique datasets"
-      datasets
+      datasets.sort_by { |d| d[:name] }
     end
   end
 
@@ -120,4 +122,4 @@ class DCDataScraper
 end
 
 scraper = DCDataScraper.new
-scraper.scrape
+scraper.write_index
