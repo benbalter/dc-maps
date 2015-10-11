@@ -1,0 +1,31 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "NAME": "George Washington University", "TRANSFER_ID": 1 }, "geometry": { "type": "Point", "coordinates": [ -77.047706933863481, 38.899003861136002 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "NAME": "Kennedy Center", "TRANSFER_ID": 2 }, "geometry": { "type": "Point", "coordinates": [ -77.055532443922658, 38.897807650670728 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "NAME": "Chevy Chase Recreation Center", "TRANSFER_ID": 3 }, "geometry": { "type": "Point", "coordinates": [ -77.075787251100365, 38.965357018655283 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "NAME": "Emery Recreation Center", "TRANSFER_ID": 4 }, "geometry": { "type": "Point", "coordinates": [ -77.028239718318005, 38.958358729435126 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "NAME": "University of DC - Van Ness Campus", "TRANSFER_ID": 5 }, "geometry": { "type": "Point", "coordinates": [ -77.062942345716138, 38.943194896846286 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "NAME": "American University", "TRANSFER_ID": 6 }, "geometry": { "type": "Point", "coordinates": [ -77.087946265563531, 38.937978350262718 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "NAME": "Georgetown University", "TRANSFER_ID": 7 }, "geometry": { "type": "Point", "coordinates": [ -77.078527018242625, 38.918087775082313 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "NAME": "Howard University", "TRANSFER_ID": 8 }, "geometry": { "type": "Point", "coordinates": [ -77.020498215113264, 38.9239660459913 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 9, "NAME": "Catholic University of America", "TRANSFER_ID": 9 }, "geometry": { "type": "Point", "coordinates": [ -76.996503800626286, 38.933035929238301 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "NAME": "Langdon Park Recreation Center", "TRANSFER_ID": 10 }, "geometry": { "type": "Point", "coordinates": [ -76.976225774977237, 38.926612700917758 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 11, "NAME": "Home Depot Shopping Center", "TRANSFER_ID": 11 }, "geometry": { "type": "Point", "coordinates": [ -76.992862845576212, 38.921300937416561 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 12, "NAME": "Kenilworth Recreation Center", "TRANSFER_ID": 12 }, "geometry": { "type": "Point", "coordinates": [ -76.942903489161381, 38.907450498850544 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 13, "NAME": "East River Park Shopping Center", "TRANSFER_ID": 13 }, "geometry": { "type": "Point", "coordinates": [ -76.947767801154782, 38.894508319598096 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 14, "NAME": "Washington Recreation Center", "TRANSFER_ID": 14 }, "geometry": { "type": "Point", "coordinates": [ -77.022985777736807, 38.902582408101729 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 15, "NAME": "MCI Center", "TRANSFER_ID": 15 }, "geometry": { "type": "Point", "coordinates": [ -77.020932254617293, 38.898416779073273 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 16, "NAME": "Union Station", "TRANSFER_ID": 16 }, "geometry": { "type": "Point", "coordinates": [ -77.007926365686188, 38.896978560900386 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 17, "NAME": "Wheatley Recreation Center", "TRANSFER_ID": 17 }, "geometry": { "type": "Point", "coordinates": [ -76.989566917483216, 38.903649901492862 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 18, "NAME": "Waterside Mall", "TRANSFER_ID": 18 }, "geometry": { "type": "Point", "coordinates": [ -77.01763791777789, 38.876469061615467 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 19, "NAME": "St. Elizabeths - West Campus", "TRANSFER_ID": 19 }, "geometry": { "type": "Point", "coordinates": [ -76.99610052019105, 38.855576286642481 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 20, "NAME": "Frederick Douglas Community Center", "TRANSFER_ID": 20 }, "geometry": { "type": "Point", "coordinates": [ -76.979022384791776, 38.847566707028051 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 21, "NAME": "RFK Stadium", "TRANSFER_ID": 21 }, "geometry": { "type": "Point", "coordinates": [ -76.971948048678243, 38.889847921893413 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 22, "NAME": "Gallaudet University", "TRANSFER_ID": 22 }, "geometry": { "type": "Point", "coordinates": [ -76.996180039650355, 38.90530725618779 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 23, "NAME": "Southeast Tennis and Learning Center", "TRANSFER_ID": 23 }, "geometry": { "type": "Point", "coordinates": [ -76.996481516718788, 38.838343761804481 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 24, "NAME": "Hillcrest Recreation Center", "TRANSFER_ID": 24 }, "geometry": { "type": "Point", "coordinates": [ -76.961503808784627, 38.859435548810019 ] } }
+]
+}
