@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "NAME": "Boys and Girls Club - Headquarters", "ADDRESS": "4103 BENNING ROAD NE", "PHONE": "(202) 540-2300", "X": 404893.34, "Y": 136108.59, "ADDRID": 288111 }, "geometry": { "type": "Point", "coordinates": [ -76.943596580611242, 38.892817103115441 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "NAME": "Boys and Girls Club - FBR Branch @ THEARC", "ADDRESS": "1901 MISSISSIPPI AVENUE SE SUITE 103", "PHONE": "(202) 610-9707", "X": 402142.37, "Y": 130640.01, "ADDRID": 295845 }, "geometry": { "type": "Point", "coordinates": [ -76.975324143870296, 38.843564901385861 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "NAME": "Boys and Girls Club - Old Petworth School Clubhouse #6", "ADDRESS": "801 SHEPHERD STREET NW", "PHONE": "(202) 576-6729\r\n202.576.6729\r\n", "X": 397935.75, "Y": 141355.78, "ADDRID": 252510 }, "geometry": { "type": "Point", "coordinates": [ -77.023812746883337, 38.940096728881471 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "NAME": "Boys and Girls Club - Richard England Clubhouse #14", "ADDRESS": "4103 BENNING ROAD NE", "PHONE": "(202) 388-8181", "X": 404893.34, "Y": 136108.59, "ADDRID": 288111 }, "geometry": { "type": "Point", "coordinates": [ -76.943596580611242, 38.892817103115441 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "NAME": "Boys and Girls Club - Jelleff Boys & Girls Club", "ADDRESS": "3265 S STREET NW", "PHONE": "(202) 462-1317", "X": 394201.67, "Y": 138652.15, "ADDRID": 273636 }, "geometry": { "type": "Point", "coordinates": [ -77.066861308665523, 38.91572487645692 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "NAME": "Boys and Girls Club - Bolling Air Force Base Youth Center", "ADDRESS": "152 ARNOLD AVENUE SW", "PHONE": "(202) 767-4003", "X": 398193.71, "Y": 130494.49, "ADDRID": 309321 }, "geometry": { "type": "Point", "coordinates": [ -77.020808701182233, 38.842254744633181 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "NAME": "Boys and Girls Club - Office of Government Relations", "ADDRESS": "1707 L STREET NW", "PHONE": "(202) 507-6670", "X": 396597.72, "Y": 137354.95, "ADDRID": 241801 }, "geometry": { "type": "Point", "coordinates": [ -77.039226660790646, 38.904051796531647 ] } }
+]
+}

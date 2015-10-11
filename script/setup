@@ -1,0 +1,121 @@
+#!/usr/bin/env ruby
+
+require 'open-uri'
+require 'logger'
+require 'json'
+require 'addressable/uri'
+require "addressable/template"
+require 'active_support/inflector'
+require 'parallel'
+
+class DCDataScraper
+
+  API_BASE = "http://opendata.dc.gov/datasets"
+  DEFAULT_ARGS = {
+    sort_by: "name",
+    format: "json",
+    per_page: 100,
+    page: 1,
+  }
+
+  def logger
+    @logger ||= Logger.new(STDOUT)
+  end
+
+  def query_uri(args={})
+    template = Addressable::Template.new("#{API_BASE}{?query*}")
+    template.expand({"query" => DEFAULT_ARGS.merge(args)})
+  end
+
+  def get(uri)
+    JSON.parse open(uri).read
+  end
+
+  def get_page(page)
+    uri = query_uri({ page: page})
+    get(uri)["data"]
+  end
+
+  def total_records
+    @total_records ||= begin
+      uri = query_uri({ per_page: 1})
+      data = get(uri)
+      total = data["metadata"]["stats"]["total_count"]
+      logger.info "Found #{total} total records"
+      total
+    end
+  end
+
+  def pages
+    @pages ||= (total_records.to_f / DEFAULT_ARGS[:per_page]).ceil
+  end
+
+  def datasets_from_page(page)
+    get_page(page).map do |dataset|
+      {
+        id: dataset["id"],
+        name: dataset["name"],
+        filename: "#{dataset["name"].parameterize}.geojson",
+        url: "#{API_BASE}/#{dataset["id"]}.geojson"
+      }
+    end
+  end
+
+  def directory
+    File.expand_path "..", File.dirname(__FILE__)
+  end
+
+  def cleanup
+    logger.info "Cleaning up the repo..."
+    `rm -Rf #{directory}/*.geojson`
+  end
+
+  def scrape
+    cleanup
+    Parallel.each(datasets, :progress => "Scraping...") do |dataset|
+      `curl --silent --compressed #{dataset[:url]} -o #{dataset[:filename]}`
+    end
+    enforce_size_limit
+    write_index
+  end
+
+  def datasets
+    @datasets ||= begin
+      page = 1
+      datasets = []
+      Parallel.each(1..pages, :progress => "Collecting datasets...", :in_threads => pages) do |page|
+        datasets.concat datasets_from_page(page)
+      end
+      datasets = datasets.uniq
+      logger.info "Found #{datasets.count} unique datasets"
+      datasets
+    end
+  end
+
+  def index
+    @index ||= "## Datasets\n\n" + datasets.map do |dataset|
+      "* [#{dataset[:name]}](#{dataset[:filename]})"
+    end.join("\n")
+  end
+
+  def write_index
+    logger.info "Updating README.md"
+    readme_path = File.expand_path "README.md", directory
+    readme = File.open(readme_path).read
+    readme = readme.gsub(/## Datasets([^"##"]+\n)/, index)
+    File.write readme_path, readme
+  end
+
+  def enforce_size_limit
+    logger.info "Checking for large files..."
+    `find #{directory} -size +100M`.split("\n").each do |file|
+      logger.warn "Removing #{file}"
+      datasets.reject! { |dataset| File.expand_path(dataset[:filename], directory) == file }
+      `rm -f #{file}`
+    end
+    logger.info "Left with #{datasets.count} datasets"
+  end
+end
+
+scraper = DCDataScraper.new
+scraper.enforce_size_limit
