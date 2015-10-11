@@ -118,4 +118,4 @@ class DCDataScraper
 end
 
 scraper = DCDataScraper.new
-scraper.enforce_size_limit
+scraper.scrape
