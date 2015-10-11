@@ -302,8 +302,6 @@ http://opendata.dc.gov/
 * [ITSA Current Awarded Engagements](maps/itsa-current-awarded-engagements.geojson)
 * [ITSA Current Open Requirements](maps/itsa-current-open-requirements.geojson)
 * [ITSA Program Managers](maps/itsa-program-managers.geojson)
-* [ITSPE Facts](maps/itspe-facts.geojson)
-* [ITSPE Property Sales](maps/itspe-property-sales.geojson)
 * [ITSPE Vacant Property](maps/itspe-vacant-property.geojson)
 * [Illegal Dumping - Last 30 Days](maps/illegal-dumping-last-30-days.geojson)
 * [Impervious Surface 2010](maps/impervious-surface-2010.geojson)
@@ -510,8 +508,6 @@ http://opendata.dc.gov/
 * [Street Segments](maps/street-segments.geojson)
 * [Street Vending Zones](maps/street-vending-zones.geojson)
 * [Street Vendor Locations](maps/street-vendor-locations.geojson)
-* [Street Vendors](maps/street-vendors.geojson)
-* [Street/Alley Cleaning - Last 30 Days](maps/street-alley-cleaning-last-30-days.geojson)
 * [Street/Alley Lights - Last 30 Days](maps/street-alley-lights-last-30-days.geojson)
 * [Street/Alley Repair - Last 30 Days](maps/street-alley-repair-last-30-days.geojson)
 * [Street/Alley Repave - Last 30 Days](maps/street-alley-repave-last-30-days.geojson)
@@ -592,6 +588,8 @@ http://opendata.dc.gov/
 * [Zoning Label](maps/zoning-label.geojson)
 * [Zoning Label](maps/zoning-label.geojson)
 * [Zoning Label](maps/zoning-label.geojson)
-* [Zoning Label](maps/zoning-label.geojson)* [Capital Projects - 2012](maps/capital-projects-2012.geojson)* [Capital Projects - 2012](capital-projects-2012.geojson)## Fine print
+* [Zoning Label](maps/zoning-label.geojson)
+
+## Fine print
 
 > The data made available here has been modified for use from its original source, which is the Government of the District of Columbia. Neither the District of Columbia Government nor the Office of the Chief Technology Officer (OCTO) makes any claims as to the completeness, accuracy or content of any data contained in this application; makes any representation of any kind, including, but not limited to, warranty of the accuracy or fitness for a particular use; nor are any such warranties to be implied or inferred with respect to the information or data furnished herein. The data is subject to change as modifications and updates are complete. It is understood that the information contained in the web feed is being used at one's own risk.

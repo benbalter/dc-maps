@@ -90,16 +90,16 @@ class DCDataScraper
       Parallel.each(1..pages, :progress => "Collecting datasets...", :in_threads => pages) do |page|
         datasets.concat datasets_from_page(page)
       end
-      datasets = datasets.uniq
+      datasets = datasets.uniq.compact.sort_by { |d| d[:name] }
       logger.info "Found #{datasets.count} unique datasets"
-      datasets.sort_by { |d| d[:name] }
+      datasets
     end
   end
 
   def index
     @index ||= "## Datasets\n\n" + datasets.map do |dataset|
       "* [#{dataset[:name]}](maps/#{dataset[:filename]})"
-    end.join("\n")
+    end.join("\n") + "\n\n"
   end
 
   def write_index
@@ -122,4 +122,4 @@ class DCDataScraper
 end
 
 scraper = DCDataScraper.new
-scraper.write_index
+scraper.scrape
