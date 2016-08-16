@@ -1,8 +1,1 @@
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
-"features": [
-{ "type": "Feature", "properties": { "OBJECTID": 1, "SERVICECODE": "S0196", "SERVICECODEDESCRIPTION": "Leaf Season Collection", "SERVICETYPECODEDESCRIPTION": "SWMA- Solid Waste Management Admistration", "ORGANIZATIONACRONYM": "DPW", "SERVICECALLCOUNT": 1, "ADDDATE": "2015-09-12T07:17:40.000Z", "RESOLUTIONDATE": "2015-09-24T19:27:21.000Z", "SERVICEDUEDATE": "2015-10-02T17:00:00.000Z", "SERVICEORDERDATE": "2015-09-12T07:17:40.000Z", "INSPECTIONFLAG": "N", "INSPECTIONDATE": "1970-01-01T00:00:00.000Z", "INSPECTORNAME": null, "SERVICEORDERSTATUS": "CLOSED", "STATUS_CODE": "CLOSED", "SERVICEREQUESTID": "15-00260953", "PRIORITY": "STANDARD", "STREETADDRESS": "800 ADRIAN STREET SE", "XCOORD": 404878, "YCOORD": 134617.64, "LATITUDE": 38.87937869, "LONGITUDE": -76.94378172, "CITY": "WASHINGTON", "STATE": "DC", "ZIPCODE": 20019, "MARADDRESSREPOSITORYID": 155873, "WARD": "7", "DETAILS": null }, "geometry": { "type": "Point", "coordinates": [ -76.943783988299998, 38.8793861431 ] } }
-]
-}
+{"processingTime":"0.109 seconds","status":"Processing","generating":{}}
