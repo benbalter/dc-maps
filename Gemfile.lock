@@ -13,8 +13,8 @@ GEM
     minitest (5.8.1)
     parallel (1.6.1)
     ruby-progressbar (1.7.5)
-    thread_safe (0.3.5)
-    tzinfo (1.2.2)
+    thread_safe (0.3.6)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
